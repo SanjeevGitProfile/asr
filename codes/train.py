@@ -72,7 +72,7 @@ def train():
 
     # Save model
     torch.save(srgen_model.state_dict(),
-               base_utils.get_curdir() + "\\models\\" + configs.model_name)
+               base_utils.get_curdir() + "\\model_weights\\" + configs.model_name)
 
     # Predict & Save
     image_saver = Image_Saver("\\output\\itr" + str(configs.epochs))
